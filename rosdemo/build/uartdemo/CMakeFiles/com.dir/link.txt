@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++11 -O3  -shared -Wl,-soname,libcom.so -o /home/x/demo/rosdemo/devel/lib/libcom.so CMakeFiles/com.dir/src/com.cpp.o 

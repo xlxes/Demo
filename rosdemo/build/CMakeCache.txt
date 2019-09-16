@@ -34,7 +34,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=sp_class
+CATKIN_WHITELIST_PACKAGES:STRING=uartdemo
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -274,6 +274,9 @@ actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
+//Dependencies for target
+com_LIB_DEPENDS:STATIC=
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
@@ -430,6 +433,12 @@ tfdemo_SOURCE_DIR:STATIC=/home/x/demo/rosdemo/src/tfdemo
 
 //The directory containing a CMake configuration file for turtlesim.
 turtlesim_DIR:PATH=/opt/ros/kinetic/share/turtlesim/cmake
+
+//Value Computed by CMake
+uartdemo_BINARY_DIR:STATIC=/home/x/demo/rosdemo/build/uartdemo
+
+//Value Computed by CMake
+uartdemo_SOURCE_DIR:STATIC=/home/x/demo/rosdemo/src/uartdemo
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake

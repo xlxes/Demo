@@ -1,2 +1,2 @@
-actiondemo:server_client_cpp:sp_class:sub_pub_cpp:tfdemo
--DCATKIN_WHITELIST_PACKAGES=sp_class -DCATKIN_DEVEL_PREFIX=/home/x/demo/rosdemo/devel -DCMAKE_INSTALL_PREFIX=/home/x/demo/rosdemo/install -G Unix Makefiles
+actiondemo:ros-matlab/展示/sk:ros-matlab/展示/snake:serialdemo:server_client_cpp:sp_class:sub_pub_cpp:tfdemo:uartdemo
+-DCATKIN_WHITELIST_PACKAGES=uartdemo -DCATKIN_DEVEL_PREFIX=/home/x/demo/rosdemo/devel -DCMAKE_INSTALL_PREFIX=/home/x/demo/rosdemo/install -G Unix Makefiles

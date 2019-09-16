@@ -1,0 +1,8 @@
+prefix=/home/x/demo/rosdemo/install
+
+Name: uartdemo
+Description: Description of uartdemo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/x/demo/rosdemo/install/lib 
+Requires: 

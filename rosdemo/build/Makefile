@@ -292,7 +292,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f sp_class/CMakeFiles/std_msgs_generate_messages_py.dir/build.make sp_class/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/std_msgs_generate_messages_py.dir/build.make uartdemo/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -305,7 +305,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f sp_class/CMakeFiles/roscpp_generate_messages_py.dir/build.make sp_class/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/roscpp_generate_messages_py.dir/build.make uartdemo/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -318,7 +318,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f sp_class/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make sp_class/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -331,7 +331,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f sp_class/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make sp_class/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -344,7 +344,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make sp_class/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make uartdemo/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -357,7 +357,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make sp_class/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -370,7 +370,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make sp_class/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make uartdemo/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -383,7 +383,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f sp_class/CMakeFiles/roscpp_generate_messages_eus.dir/build.make sp_class/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/roscpp_generate_messages_eus.dir/build.make uartdemo/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -396,7 +396,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f sp_class/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make sp_class/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -409,7 +409,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make sp_class/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make uartdemo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -422,7 +422,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f sp_class/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make sp_class/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make uartdemo/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -435,7 +435,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f sp_class/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make sp_class/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make uartdemo/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -448,7 +448,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make sp_class/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make uartdemo/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -461,7 +461,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f sp_class/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make sp_class/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make uartdemo/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -474,21 +474,34 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make sp_class/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f uartdemo/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make uartdemo/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named sp
+# Target rules for targets named com
 
 # Build rule for target.
-sp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sp
-.PHONY : sp
+com: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 com
+.PHONY : com
 
 # fast build rule for target.
-sp/fast:
-	$(MAKE) -f sp_class/CMakeFiles/sp.dir/build.make sp_class/CMakeFiles/sp.dir/build
-.PHONY : sp/fast
+com/fast:
+	$(MAKE) -f uartdemo/CMakeFiles/com.dir/build.make uartdemo/CMakeFiles/com.dir/build
+.PHONY : com/fast
+
+#=============================================================================
+# Target rules for targets named uartdemo
+
+# Build rule for target.
+uartdemo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uartdemo
+.PHONY : uartdemo
+
+# fast build rule for target.
+uartdemo/fast:
+	$(MAKE) -f uartdemo/CMakeFiles/uartdemo.dir/build.make uartdemo/CMakeFiles/uartdemo.dir/build
+.PHONY : uartdemo/fast
 
 # Help Target
 help:
@@ -527,7 +540,8 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... sp"
+	@echo "... com"
+	@echo "... uartdemo"
 .PHONY : help
 
 
