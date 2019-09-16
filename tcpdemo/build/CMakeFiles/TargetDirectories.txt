@@ -1,0 +1,4 @@
+/home/x/demo/tcpdemo/build/CMakeFiles/rebuild_cache.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/server.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/edit_cache.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/client.dir
