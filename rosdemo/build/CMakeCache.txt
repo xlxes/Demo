@@ -34,7 +34,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=tfdemo
+CATKIN_WHITELIST_PACKAGES:STRING=sp_class
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -345,7 +345,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libtf2.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -388,6 +388,12 @@ server_client_cpp_BINARY_DIR:STATIC=/home/x/demo/rosdemo/build/server_client_cpp
 
 //Value Computed by CMake
 server_client_cpp_SOURCE_DIR:STATIC=/home/x/demo/rosdemo/src/server_client_cpp
+
+//Value Computed by CMake
+sp_class_BINARY_DIR:STATIC=/home/x/demo/rosdemo/build/sp_class
+
+//Value Computed by CMake
+sp_class_SOURCE_DIR:STATIC=/home/x/demo/rosdemo/src/sp_class
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
