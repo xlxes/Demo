@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/x/demo/rosdemo/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/x/demo/rosdemo/src/actiondemo/include",
+                "/home/x/demo/rosdemo/src/server_client_cpp/include",
+                "/home/x/demo/rosdemo/src/sub_pub_cpp/include",
+                "/home/x/demo/rosdemo/src/tfdemo/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

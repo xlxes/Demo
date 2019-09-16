@@ -1,0 +1,8 @@
+prefix=/home/x/demo/rosdemo/devel
+
+Name: actiondemo
+Description: Description of actiondemo
+Version: 0.0.0
+Cflags: -I/home/x/demo/rosdemo/devel/include
+Libs: -L/home/x/demo/rosdemo/devel/lib 
+Requires: 

@@ -1,0 +1,2 @@
+set(actiondemo_MESSAGE_FILES "/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesAction.msg;/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesActionGoal.msg;/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesActionResult.msg;/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesActionFeedback.msg;/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesGoal.msg;/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesResult.msg;/home/x/demo/rosdemo/devel/share/actiondemo/msg/DoDishesFeedback.msg")
+set(actiondemo_SERVICE_FILES "")
