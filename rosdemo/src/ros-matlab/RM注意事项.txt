@@ -1,0 +1,12 @@
+
+连接步骤：
+0.linux端在~/.bashrc文件中添加export ROS_IP=192.168.1.101（为ubuntu的IP）
+1.linux端开启roscore
+2.matlab端命令
+setenv('ROS_MASTER_URI','http://192.168.1.106.11311') //ubuntu的IP
+setenv('ROS_IP','192.168.1.105')  		//windows的ip
+rosinit
+
+matlab端关于ros的命令
+rosinit			//开启ros连接
+rosshutdown		//关闭ros连接
