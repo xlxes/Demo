@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -O0 -g   CMakeFiles/Data.dir/src/data.cpp.o  -o Data -rdynamic 
