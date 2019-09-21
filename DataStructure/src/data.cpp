@@ -8,6 +8,8 @@ void bubblesort(vector<int> &a);
 void Insertsort(vector<int> &a);
 void Selectsort(vector<int> &a);
 void Shellsort(vector<int> &a);
+int Partition(vector<int> &a, int low, int high);
+void Quicksort(vector<int> &a, int low, int high);
 
 int main()
 {
@@ -28,7 +30,8 @@ int main()
     //bubblesort(a);
     //Insertsort(a);
     //Selectsort(a);
-    Shellsort(a);
+    //Shellsort(a);
+    Quicksort(a, 0, a.size() - 1);
 
     for (int j = 0; j < a.size(); j++)
     {
@@ -99,7 +102,7 @@ void Shellsort(vector<int> &a)
     int l = a.size();
     while (l > 1)
     {
-        l = l / 3 + 1;                   //增量序列
+        l = l / 3 + 1;                     //增量序列
         for (int i = l; i < a.size(); i++) //该部分即为增量为l的插入排序
         {
 
@@ -112,5 +115,41 @@ void Shellsort(vector<int> &a)
             }
             a[j + l] = temp;
         }
+    }
+}
+
+int Partition(vector<int> &a, int low, int high)
+{
+    int temp;
+    temp = a[low]; //此处可以使用三数取中 或者九数取中法
+    while (low < high)
+    {
+        while (low < high && a[high] >= temp)
+            high--;
+        a[low] = a[high];
+        while (low < high && a[low] <= temp)
+            low++;
+        a[high] = a[low];
+    }
+    a[low] = temp; //中轴位置赋值temp
+    return low;
+}
+
+//快速排序
+void Quicksort(vector<int> &a, int low, int high)
+{
+    int pivot;
+    // if (low < high)     //小数值时候的排序可使用插入排序
+    // {
+    //     pivot = Partition(a, low, high);
+    //     Quicksort(a, low, pivot - 1);
+    //     Quicksort(a, pivot + 1, high);
+    // }
+
+    while (low < high)
+    {
+        pivot = Partition(a, low, high);
+        Quicksort(a, low, pivot - 1);
+        low = pivot + 1;        //尾递归优化
     }
 }
