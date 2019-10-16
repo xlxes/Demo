@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/x/demo/DataStructure
 CMAKE_BINARY_DIR = /home/x/demo/DataStructure/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/Data.dir
+# Target rules for target CMakeFiles/sort.dir
 
 # All Build rule for target.
-CMakeFiles/Data.dir/all:
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/depend
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/demo/DataStructure/build/CMakeFiles --progress-num=1,2 "Built target Data"
-.PHONY : CMakeFiles/Data.dir/all
+CMakeFiles/sort.dir/all:
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/depend
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/demo/DataStructure/build/CMakeFiles --progress-num=1,2 "Built target sort"
+.PHONY : CMakeFiles/sort.dir/all
 
 # Include target in all.
-all: CMakeFiles/Data.dir/all
+all: CMakeFiles/sort.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Data.dir/rule: cmake_check_build_system
+CMakeFiles/sort.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/DataStructure/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Data.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sort.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/DataStructure/build/CMakeFiles 0
-.PHONY : CMakeFiles/Data.dir/rule
+.PHONY : CMakeFiles/sort.dir/rule
 
 # Convenience name for target.
-Data: CMakeFiles/Data.dir/rule
+sort: CMakeFiles/sort.dir/rule
 
-.PHONY : Data
-
-# clean rule for target.
-CMakeFiles/Data.dir/clean:
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/clean
-.PHONY : CMakeFiles/Data.dir/clean
+.PHONY : sort
 
 # clean rule for target.
-clean: CMakeFiles/Data.dir/clean
+CMakeFiles/sort.dir/clean:
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/clean
+.PHONY : CMakeFiles/sort.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sort.dir/clean
 
 .PHONY : clean
 

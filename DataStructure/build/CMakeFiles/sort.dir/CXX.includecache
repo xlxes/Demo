@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/x/demo/DataStructure/src/data.cpp
+/home/x/demo/DataStructure/src/sort.cpp
 iostream
 -
 string
 -
 vector
+-
+iterator
+-
+algorithm
 -
 

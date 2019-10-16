@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/x/demo/DataStructure/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Data
+# Target rules for targets named sort
 
 # Build rule for target.
-Data: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Data
-.PHONY : Data
+sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sort
+.PHONY : sort
 
 # fast build rule for target.
-Data/fast:
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/build
-.PHONY : Data/fast
+sort/fast:
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/build
+.PHONY : sort/fast
 
-src/data.o: src/data.cpp.o
+src/sort.o: src/sort.cpp.o
 
-.PHONY : src/data.o
+.PHONY : src/sort.o
 
 # target to build an object file
-src/data.cpp.o:
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/src/data.cpp.o
-.PHONY : src/data.cpp.o
+src/sort.cpp.o:
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/src/sort.cpp.o
+.PHONY : src/sort.cpp.o
 
-src/data.i: src/data.cpp.i
+src/sort.i: src/sort.cpp.i
 
-.PHONY : src/data.i
+.PHONY : src/sort.i
 
 # target to preprocess a source file
-src/data.cpp.i:
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/src/data.cpp.i
-.PHONY : src/data.cpp.i
+src/sort.cpp.i:
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/src/sort.cpp.i
+.PHONY : src/sort.cpp.i
 
-src/data.s: src/data.cpp.s
+src/sort.s: src/sort.cpp.s
 
-.PHONY : src/data.s
+.PHONY : src/sort.s
 
 # target to generate assembly for a file
-src/data.cpp.s:
-	$(MAKE) -f CMakeFiles/Data.dir/build.make CMakeFiles/Data.dir/src/data.cpp.s
-.PHONY : src/data.cpp.s
+src/sort.cpp.s:
+	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/src/sort.cpp.s
+.PHONY : src/sort.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Data"
-	@echo "... src/data.o"
-	@echo "... src/data.i"
-	@echo "... src/data.s"
+	@echo "... rebuild_cache"
+	@echo "... sort"
+	@echo "... src/sort.o"
+	@echo "... src/sort.i"
+	@echo "... src/sort.s"
 .PHONY : help
 
 
