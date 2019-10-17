@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/x/demo/DataStructure/build/sort",
+            "program": "/home/x/demo/DataStructure/build/find",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

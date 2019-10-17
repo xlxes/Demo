@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named find
+
+# Build rule for target.
+find: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 find
+.PHONY : find
+
+# fast build rule for target.
+find/fast:
+	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/build
+.PHONY : find/fast
+
+#=============================================================================
 # Target rules for targets named sort
 
 # Build rule for target.
@@ -122,6 +135,33 @@ sort: cmake_check_build_system
 sort/fast:
 	$(MAKE) -f CMakeFiles/sort.dir/build.make CMakeFiles/sort.dir/build
 .PHONY : sort/fast
+
+src/find.o: src/find.cpp.o
+
+.PHONY : src/find.o
+
+# target to build an object file
+src/find.cpp.o:
+	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/src/find.cpp.o
+.PHONY : src/find.cpp.o
+
+src/find.i: src/find.cpp.i
+
+.PHONY : src/find.i
+
+# target to preprocess a source file
+src/find.cpp.i:
+	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/src/find.cpp.i
+.PHONY : src/find.cpp.i
+
+src/find.s: src/find.cpp.s
+
+.PHONY : src/find.s
+
+# target to generate assembly for a file
+src/find.cpp.s:
+	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/src/find.cpp.s
+.PHONY : src/find.cpp.s
 
 src/sort.o: src/sort.cpp.o
 
@@ -157,8 +197,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... find"
 	@echo "... rebuild_cache"
 	@echo "... sort"
+	@echo "... src/find.o"
+	@echo "... src/find.i"
+	@echo "... src/find.s"
 	@echo "... src/sort.o"
 	@echo "... src/sort.i"
 	@echo "... src/sort.s"

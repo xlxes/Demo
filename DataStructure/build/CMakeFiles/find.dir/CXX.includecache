@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/x/demo/DataStructure/src/find.cpp
+iostream
+-
+string
+-
+vector
+-
+iterator
+-
+algorithm
+-
+

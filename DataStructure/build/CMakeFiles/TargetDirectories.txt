@@ -1,3 +1,4 @@
 /home/x/demo/DataStructure/build/CMakeFiles/edit_cache.dir
+/home/x/demo/DataStructure/build/CMakeFiles/find.dir
 /home/x/demo/DataStructure/build/CMakeFiles/rebuild_cache.dir
 /home/x/demo/DataStructure/build/CMakeFiles/sort.dir
