@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -O3   CMakeFiles/s4.dir/src/s4.cpp.o  -o s4 -rdynamic -lpthread 

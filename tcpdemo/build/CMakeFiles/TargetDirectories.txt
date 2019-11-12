@@ -1,4 +1,10 @@
-/home/x/demo/tcpdemo/build/CMakeFiles/rebuild_cache.dir
-/home/x/demo/tcpdemo/build/CMakeFiles/server.dir
 /home/x/demo/tcpdemo/build/CMakeFiles/edit_cache.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/rebuild_cache.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/s4.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/c4.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/server3.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/client3.dir
 /home/x/demo/tcpdemo/build/CMakeFiles/client.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/server.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/client2.dir
+/home/x/demo/tcpdemo/build/CMakeFiles/server2.dir
