@@ -60,76 +60,39 @@ CMAKE_SOURCE_DIR = /home/x/demo/tcpdemo
 CMAKE_BINARY_DIR = /home/x/demo/tcpdemo/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/s4.dir
+# Target rules for target CMakeFiles/c1.dir
 
 # All Build rule for target.
-CMakeFiles/s4.dir/all:
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/depend
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/demo/tcpdemo/build/CMakeFiles --progress-num=9,10 "Built target s4"
-.PHONY : CMakeFiles/s4.dir/all
+CMakeFiles/c1.dir/all:
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/depend
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/demo/tcpdemo/build/CMakeFiles --progress-num=1,2 "Built target c1"
+.PHONY : CMakeFiles/c1.dir/all
 
 # Include target in all.
-all: CMakeFiles/s4.dir/all
+all: CMakeFiles/c1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/s4.dir/rule: cmake_check_build_system
+CMakeFiles/c1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/tcpdemo/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/s4.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/c1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/tcpdemo/build/CMakeFiles 0
-.PHONY : CMakeFiles/s4.dir/rule
+.PHONY : CMakeFiles/c1.dir/rule
 
 # Convenience name for target.
-s4: CMakeFiles/s4.dir/rule
+c1: CMakeFiles/c1.dir/rule
 
-.PHONY : s4
-
-# clean rule for target.
-CMakeFiles/s4.dir/clean:
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/clean
-.PHONY : CMakeFiles/s4.dir/clean
+.PHONY : c1
 
 # clean rule for target.
-clean: CMakeFiles/s4.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/c4.dir
-
-# All Build rule for target.
-CMakeFiles/c4.dir/all:
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/depend
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/demo/tcpdemo/build/CMakeFiles --progress-num=1,2 "Built target c4"
-.PHONY : CMakeFiles/c4.dir/all
-
-# Include target in all.
-all: CMakeFiles/c4.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/c4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/tcpdemo/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/c4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/tcpdemo/build/CMakeFiles 0
-.PHONY : CMakeFiles/c4.dir/rule
-
-# Convenience name for target.
-c4: CMakeFiles/c4.dir/rule
-
-.PHONY : c4
+CMakeFiles/c1.dir/clean:
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/clean
+.PHONY : CMakeFiles/c1.dir/clean
 
 # clean rule for target.
-CMakeFiles/c4.dir/clean:
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/clean
-.PHONY : CMakeFiles/c4.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/c4.dir/clean
+clean: CMakeFiles/c1.dir/clean
 
 .PHONY : clean
 
@@ -167,6 +130,43 @@ CMakeFiles/server3.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/server3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/s1.dir
+
+# All Build rule for target.
+CMakeFiles/s1.dir/all:
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/depend
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/demo/tcpdemo/build/CMakeFiles --progress-num=9,10 "Built target s1"
+.PHONY : CMakeFiles/s1.dir/all
+
+# Include target in all.
+all: CMakeFiles/s1.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/s1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/tcpdemo/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/s1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/demo/tcpdemo/build/CMakeFiles 0
+.PHONY : CMakeFiles/s1.dir/rule
+
+# Convenience name for target.
+s1: CMakeFiles/s1.dir/rule
+
+.PHONY : s1
+
+# clean rule for target.
+CMakeFiles/s1.dir/clean:
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/clean
+.PHONY : CMakeFiles/s1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/s1.dir/clean
 
 .PHONY : clean
 

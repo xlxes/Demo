@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named s4
+# Target rules for targets named c1
 
 # Build rule for target.
-s4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 s4
-.PHONY : s4
+c1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 c1
+.PHONY : c1
 
 # fast build rule for target.
-s4/fast:
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/build
-.PHONY : s4/fast
-
-#=============================================================================
-# Target rules for targets named c4
-
-# Build rule for target.
-c4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 c4
-.PHONY : c4
-
-# fast build rule for target.
-c4/fast:
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/build
-.PHONY : c4/fast
+c1/fast:
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/build
+.PHONY : c1/fast
 
 #=============================================================================
 # Target rules for targets named server3
@@ -148,6 +135,19 @@ server3: cmake_check_build_system
 server3/fast:
 	$(MAKE) -f CMakeFiles/server3.dir/build.make CMakeFiles/server3.dir/build
 .PHONY : server3/fast
+
+#=============================================================================
+# Target rules for targets named s1
+
+# Build rule for target.
+s1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 s1
+.PHONY : s1
+
+# fast build rule for target.
+s1/fast:
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/build
+.PHONY : s1/fast
 
 #=============================================================================
 # Target rules for targets named client3
@@ -214,32 +214,32 @@ server2/fast:
 	$(MAKE) -f CMakeFiles/server2.dir/build.make CMakeFiles/server2.dir/build
 .PHONY : server2/fast
 
-src/c4.o: src/c4.cpp.o
+src/c1.o: src/c1.cpp.o
 
-.PHONY : src/c4.o
+.PHONY : src/c1.o
 
 # target to build an object file
-src/c4.cpp.o:
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/src/c4.cpp.o
-.PHONY : src/c4.cpp.o
+src/c1.cpp.o:
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/src/c1.cpp.o
+.PHONY : src/c1.cpp.o
 
-src/c4.i: src/c4.cpp.i
+src/c1.i: src/c1.cpp.i
 
-.PHONY : src/c4.i
+.PHONY : src/c1.i
 
 # target to preprocess a source file
-src/c4.cpp.i:
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/src/c4.cpp.i
-.PHONY : src/c4.cpp.i
+src/c1.cpp.i:
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/src/c1.cpp.i
+.PHONY : src/c1.cpp.i
 
-src/c4.s: src/c4.cpp.s
+src/c1.s: src/c1.cpp.s
 
-.PHONY : src/c4.s
+.PHONY : src/c1.s
 
 # target to generate assembly for a file
-src/c4.cpp.s:
-	$(MAKE) -f CMakeFiles/c4.dir/build.make CMakeFiles/c4.dir/src/c4.cpp.s
-.PHONY : src/c4.cpp.s
+src/c1.cpp.s:
+	$(MAKE) -f CMakeFiles/c1.dir/build.make CMakeFiles/c1.dir/src/c1.cpp.s
+.PHONY : src/c1.cpp.s
 
 src/client.o: src/client.cpp.o
 
@@ -322,32 +322,32 @@ src/client3.cpp.s:
 	$(MAKE) -f CMakeFiles/client3.dir/build.make CMakeFiles/client3.dir/src/client3.cpp.s
 .PHONY : src/client3.cpp.s
 
-src/s4.o: src/s4.cpp.o
+src/s1.o: src/s1.cpp.o
 
-.PHONY : src/s4.o
+.PHONY : src/s1.o
 
 # target to build an object file
-src/s4.cpp.o:
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/src/s4.cpp.o
-.PHONY : src/s4.cpp.o
+src/s1.cpp.o:
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/src/s1.cpp.o
+.PHONY : src/s1.cpp.o
 
-src/s4.i: src/s4.cpp.i
+src/s1.i: src/s1.cpp.i
 
-.PHONY : src/s4.i
+.PHONY : src/s1.i
 
 # target to preprocess a source file
-src/s4.cpp.i:
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/src/s4.cpp.i
-.PHONY : src/s4.cpp.i
+src/s1.cpp.i:
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/src/s1.cpp.i
+.PHONY : src/s1.cpp.i
 
-src/s4.s: src/s4.cpp.s
+src/s1.s: src/s1.cpp.s
 
-.PHONY : src/s4.s
+.PHONY : src/s1.s
 
 # target to generate assembly for a file
-src/s4.cpp.s:
-	$(MAKE) -f CMakeFiles/s4.dir/build.make CMakeFiles/s4.dir/src/s4.cpp.s
-.PHONY : src/s4.cpp.s
+src/s1.cpp.s:
+	$(MAKE) -f CMakeFiles/s1.dir/build.make CMakeFiles/s1.dir/src/s1.cpp.s
+.PHONY : src/s1.cpp.s
 
 src/server.o: src/server.cpp.o
 
@@ -438,17 +438,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... s4"
-	@echo "... c4"
+	@echo "... c1"
 	@echo "... server3"
+	@echo "... s1"
 	@echo "... client3"
 	@echo "... client"
 	@echo "... server"
 	@echo "... client2"
 	@echo "... server2"
-	@echo "... src/c4.o"
-	@echo "... src/c4.i"
-	@echo "... src/c4.s"
+	@echo "... src/c1.o"
+	@echo "... src/c1.i"
+	@echo "... src/c1.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"
@@ -458,9 +458,9 @@ help:
 	@echo "... src/client3.o"
 	@echo "... src/client3.i"
 	@echo "... src/client3.s"
-	@echo "... src/s4.o"
-	@echo "... src/s4.i"
-	@echo "... src/s4.s"
+	@echo "... src/s1.o"
+	@echo "... src/s1.i"
+	@echo "... src/s1.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
