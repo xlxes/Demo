@@ -1,0 +1,40 @@
+程序解读：
+    本程序使用TCP相关函数构建通信，使用pthread文件构建多线程实现同时收发。
+    一个服务器可连接多个客户端，可接收多个客户端发送的文件信息，但是服务器发送由于键盘输入，所以不确定回复给哪个客户端。
+    服务器使用8080端口，客户端使用8081端口（可改）
+
+client客户端编写思路：
+1.声明服务器端地址serveraddr 和 客户端服务地址clientaddr
+2.填写服务器信息
+3.填写客户端自己的信息，主要是绑定端口
+4.创建文件描述符fd,fd与本机地址绑定bind,connect函数与服务器连接
+5.创建两个线程，一个负责读，一个负责写，传入参数fd
+6.主程序中使用join阻塞，线程中使用while(1)一直循环
+
+server服务端编写思路：
+1.声明服务器端地址serveraddr 和 客户端服务地址clientaddr
+2.填写服务器信息，主要是监听端口信息
+3.创建文件描述符fd,fd与服务器绑定bind,设置监听队列
+4.主程序进入while(1),使用accept来接收客户端的连接请求，生成的连接文件描述符clientfd存放于数组
+5.创建一个新线程t,传入文件描述符clientfd
+6.在线程中再次创建两个线程，负责读取和发送，传入clientfd
+
+注意事项：
+1.每次发送数据前，使用memset将数组清零
+2.每次接收数据后，需要将存储数组后加0以保证显示顺利
+3.多线程传入函数形式如下
+void *threadrecv(void *fd)
+需要将传入参数强制转化为： int recvfd = *((int *)fd);
+4.多线程注意头文件的包含，修改CMakeLists文件
+
+
+多线程pthread使用：
+1.头文件中包含#include <pthread.h>；
+2.CMakeLists中添加以下命令
+find_package(Threads REQUIRED);
+target_link_libraries(s1 Threads::Threads)
+3.程序中相关命令
+pthread_t tid1；    //声明一个线程标识符
+pthread_create(&tid1, NULL, threadsend, fd);  //创建一个线程，四个参数分别为线程标识符、线程属性、线程函数、线程参数
+pthread_join(tid1，NULL);     //两个参数为被等待的线程标识符、一个用户定义的指针，它可以用来存储被等待线程的返回值。为阻塞函数
+pthread_exit(&val);     //在线程中使用，中断线程，唯一的参数是函数的返回代码，传给join中的第二个元素

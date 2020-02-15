@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -O3  -rdynamic CMakeFiles/epoll_client.dir/src/epoll_client.cpp.o  -o epoll_client -lpthread 

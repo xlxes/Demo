@@ -1,0 +1,31 @@
+程序介绍：
+    该epoll_server为基础的epoll服务器。
+    开启./epoll_server后执行客户端程序./epoll_client 8081即可连接。
+    客户端在终端发送消息，服务器接收后返回固定的字符串"epoll test"
+
+服务器思路：
+1.创建服务器的地址信息serveraddr，并填写相应IP和端口,建立serveraddr的文件描述符serverfd,并设置为复用模式\bind\listen
+2.设置serverfd为非阻塞模式
+3.创建epollfd(使用epoll_create)
+4.将serverfd加入到epollfd，详细如下：
+    4.1 创建一个epoll_evevt类型的对象ev,将ev赋值
+    4.2 使用epoll_ctl将ev加入到epollfd
+5.创建一个epoll_event类型的数组events
+6.进入while(1),epoll_wait等待epollfd中的事件，如果有激活的事件会添加到数组events，并返回激活事件的个数
+7.for循环遍历所有events,分情况：
+    7.1 如果是serverfd,即代表新的客户端连接，accept之后将新的connfd设置为非阻塞模式并添加到epollfd
+    7.2 如果不是serverfd，则代表有数据可读，使用read读取数据
+        7.2.1 read数据大于0后send发送响应信息
+        7.2.2 read数据为0，关闭该文件标识符并在epollfd中删去（使用epoll_ctl）
+        7.2.3 read数据小于0，读取错误，直接返回
+
+
+**注意**
+1.建议将创建文件标识符（步骤1）、设置fd为非阻塞模式(步骤2)、将文件描述符加入到epollfd中(步骤4)均可以写成函数形式
+2.
+int reuse = 1;
+setsockopt(serverfd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse))
+作用如下：https://blog.csdn.net/u011068616/article/details/41819787?utm_source=itdadao&utm_medium=referral
+3.fd设置为非阻塞模式的原因，防止卡死在读写过程，如果边缘触发下，可能由于一次读满了缓冲区，但是数据并没有全部读完，因此也没有回复客户端，于是陷入死循环。
+解决的办法可以在外部套一层while(1)循环，并使用break退出。
+https://blog.csdn.net/boiled_water123/article/details/104161471
