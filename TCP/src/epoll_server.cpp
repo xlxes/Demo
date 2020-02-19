@@ -15,8 +15,6 @@
 using namespace std;
 
 const int max_epollevent = 1000; //最大监听的事件数
-const int max_msglen = 1024;     //最长1024个字节
-const char serverip[] = "192.168.124.3";
 const int serverport = 8080; //监听端口
 
 void setfd_nonblock(int fd) //设置文件描述符为非阻塞方式
@@ -30,7 +28,7 @@ void err_exit(string s) //错误退出函数
     exit(0);
 }
 
-int creat_fd(const char *ip, const int port)
+int creat_fd(const int port)
 {
     struct sockaddr_in serveraddr;
     socklen_t serverlen = sizeof(serveraddr);
@@ -38,7 +36,7 @@ int creat_fd(const char *ip, const int port)
     //设置服务器地址
     serveraddr.sin_family = AF_INET;
     serveraddr.sin_port = htons(port);
-    serveraddr.sin_addr.s_addr = inet_addr(ip);
+    serveraddr.sin_addr.s_addr = htonl(INADDR_ANY);
     //建立socketfd
     int serverfd = socket(AF_INET, SOCK_STREAM, 0);
     if (serverfd < 0)
@@ -71,7 +69,7 @@ bool addtoepollfd(int &epollfd, int &fd, int cmd)
 int main()
 {
     //创建服务器套接字
-    int serverfd = creat_fd(serverip, serverport);
+    int serverfd = creat_fd(serverport);
     setfd_nonblock(serverfd); //设置为非阻塞模式
     //创建一个epoll文件描述符
     int epollfd = epoll_create(1); //此处的1为动态设置

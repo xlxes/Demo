@@ -3,6 +3,9 @@
     "files.associations": {
         "iostream": "cpp",
         "thread": "cpp",
-        "csignal": "cpp"
+        "csignal": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "ostream": "cpp"
     }
 }

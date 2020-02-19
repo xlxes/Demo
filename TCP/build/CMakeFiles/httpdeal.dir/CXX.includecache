@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/x/Demo/TCP/src/StringSplit.h
+string
+-
+vector
+-
+
+/home/x/Demo/TCP/src/httpdeal.cpp
+httpdeal.h
+/home/x/Demo/TCP/src/httpdeal.h
+iostream
+-
+
+/home/x/Demo/TCP/src/httpdeal.h
+vector
+-
+string
+-
+string.h
+-
+unordered_map
+-
+StringSplit.h
+/home/x/Demo/TCP/src/StringSplit.h
+

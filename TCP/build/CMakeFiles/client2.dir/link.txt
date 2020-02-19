@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11 -O3  -rdynamic CMakeFiles/client2.dir/src/client2.cpp.o  -o client2 

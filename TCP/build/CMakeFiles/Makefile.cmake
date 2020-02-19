@@ -48,8 +48,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/epoll_server.dir/DependInfo.cmake"
-  "CMakeFiles/client.dir/DependInfo.cmake"
+  "CMakeFiles/httpserver.dir/DependInfo.cmake"
   "CMakeFiles/epoll_client.dir/DependInfo.cmake"
+  "CMakeFiles/client.dir/DependInfo.cmake"
+  "CMakeFiles/epoll_server.dir/DependInfo.cmake"
   "CMakeFiles/server.dir/DependInfo.cmake"
+  "CMakeFiles/httpdeal.dir/DependInfo.cmake"
+  "CMakeFiles/StringSplit.dir/DependInfo.cmake"
   )

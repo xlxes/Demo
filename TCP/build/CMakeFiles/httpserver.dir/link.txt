@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -O3  -rdynamic CMakeFiles/httpserver.dir/src/httpserver.cpp.o  -o httpserver libhttpdeal.a libStringSplit.a 

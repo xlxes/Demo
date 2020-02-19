@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhttpdeal.a  CMakeFiles/httpdeal.dir/src/httpdeal.cpp.o
+/usr/bin/ranlib libhttpdeal.a

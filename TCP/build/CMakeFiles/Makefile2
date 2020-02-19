@@ -60,76 +60,40 @@ CMAKE_SOURCE_DIR = /home/x/Demo/TCP
 CMAKE_BINARY_DIR = /home/x/Demo/TCP/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/epoll_server.dir
+# Target rules for target CMakeFiles/httpserver.dir
 
 # All Build rule for target.
-CMakeFiles/epoll_server.dir/all:
-	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/depend
-	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=5,6 "Built target epoll_server"
-.PHONY : CMakeFiles/epoll_server.dir/all
+CMakeFiles/httpserver.dir/all: CMakeFiles/httpdeal.dir/all
+CMakeFiles/httpserver.dir/all: CMakeFiles/StringSplit.dir/all
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/depend
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=11,12 "Built target httpserver"
+.PHONY : CMakeFiles/httpserver.dir/all
 
 # Include target in all.
-all: CMakeFiles/epoll_server.dir/all
+all: CMakeFiles/httpserver.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/epoll_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/epoll_server.dir/all
+CMakeFiles/httpserver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/httpserver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 0
-.PHONY : CMakeFiles/epoll_server.dir/rule
+.PHONY : CMakeFiles/httpserver.dir/rule
 
 # Convenience name for target.
-epoll_server: CMakeFiles/epoll_server.dir/rule
+httpserver: CMakeFiles/httpserver.dir/rule
 
-.PHONY : epoll_server
-
-# clean rule for target.
-CMakeFiles/epoll_server.dir/clean:
-	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/clean
-.PHONY : CMakeFiles/epoll_server.dir/clean
+.PHONY : httpserver
 
 # clean rule for target.
-clean: CMakeFiles/epoll_server.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/client.dir
-
-# All Build rule for target.
-CMakeFiles/client.dir/all:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=1,2 "Built target client"
-.PHONY : CMakeFiles/client.dir/all
-
-# Include target in all.
-all: CMakeFiles/client.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 0
-.PHONY : CMakeFiles/client.dir/rule
-
-# Convenience name for target.
-client: CMakeFiles/client.dir/rule
-
-.PHONY : client
+CMakeFiles/httpserver.dir/clean:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/clean
+.PHONY : CMakeFiles/httpserver.dir/clean
 
 # clean rule for target.
-CMakeFiles/client.dir/clean:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
-.PHONY : CMakeFiles/client.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/client.dir/clean
+clean: CMakeFiles/httpserver.dir/clean
 
 .PHONY : clean
 
@@ -140,7 +104,7 @@ clean: CMakeFiles/client.dir/clean
 CMakeFiles/epoll_client.dir/all:
 	$(MAKE) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/depend
 	$(MAKE) -f CMakeFiles/epoll_client.dir/build.make CMakeFiles/epoll_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=3,4 "Built target epoll_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=5,6 "Built target epoll_client"
 .PHONY : CMakeFiles/epoll_client.dir/all
 
 # Include target in all.
@@ -171,13 +135,87 @@ clean: CMakeFiles/epoll_client.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/client.dir
+
+# All Build rule for target.
+CMakeFiles/client.dir/all:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=3,4 "Built target client"
+.PHONY : CMakeFiles/client.dir/all
+
+# Include target in all.
+all: CMakeFiles/client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 0
+.PHONY : CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+CMakeFiles/client.dir/clean:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
+.PHONY : CMakeFiles/client.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/epoll_server.dir
+
+# All Build rule for target.
+CMakeFiles/epoll_server.dir/all:
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/depend
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=7,8 "Built target epoll_server"
+.PHONY : CMakeFiles/epoll_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/epoll_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/epoll_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/epoll_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 0
+.PHONY : CMakeFiles/epoll_server.dir/rule
+
+# Convenience name for target.
+epoll_server: CMakeFiles/epoll_server.dir/rule
+
+.PHONY : epoll_server
+
+# clean rule for target.
+CMakeFiles/epoll_server.dir/clean:
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/clean
+.PHONY : CMakeFiles/epoll_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/epoll_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/server.dir
 
 # All Build rule for target.
 CMakeFiles/server.dir/all:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=7,8 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=13,14 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Include target in all.
@@ -204,6 +242,80 @@ CMakeFiles/server.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/httpdeal.dir
+
+# All Build rule for target.
+CMakeFiles/httpdeal.dir/all: CMakeFiles/StringSplit.dir/all
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/depend
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=9,10 "Built target httpdeal"
+.PHONY : CMakeFiles/httpdeal.dir/all
+
+# Include target in all.
+all: CMakeFiles/httpdeal.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/httpdeal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/httpdeal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 0
+.PHONY : CMakeFiles/httpdeal.dir/rule
+
+# Convenience name for target.
+httpdeal: CMakeFiles/httpdeal.dir/rule
+
+.PHONY : httpdeal
+
+# clean rule for target.
+CMakeFiles/httpdeal.dir/clean:
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/clean
+.PHONY : CMakeFiles/httpdeal.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/httpdeal.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/StringSplit.dir
+
+# All Build rule for target.
+CMakeFiles/StringSplit.dir/all:
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/depend
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/x/Demo/TCP/build/CMakeFiles --progress-num=1,2 "Built target StringSplit"
+.PHONY : CMakeFiles/StringSplit.dir/all
+
+# Include target in all.
+all: CMakeFiles/StringSplit.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/StringSplit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StringSplit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/x/Demo/TCP/build/CMakeFiles 0
+.PHONY : CMakeFiles/StringSplit.dir/rule
+
+# Convenience name for target.
+StringSplit: CMakeFiles/StringSplit.dir/rule
+
+.PHONY : StringSplit
+
+# clean rule for target.
+CMakeFiles/StringSplit.dir/clean:
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/clean
+.PHONY : CMakeFiles/StringSplit.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/StringSplit.dir/clean
 
 .PHONY : clean
 

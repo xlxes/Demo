@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/x/Demo/TCP/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named epoll_server
+# Target rules for targets named httpserver
 
 # Build rule for target.
-epoll_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 epoll_server
-.PHONY : epoll_server
+httpserver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 httpserver
+.PHONY : httpserver
 
 # fast build rule for target.
-epoll_server/fast:
-	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
-.PHONY : epoll_server/fast
-
-#=============================================================================
-# Target rules for targets named client
-
-# Build rule for target.
-client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 client
-.PHONY : client
-
-# fast build rule for target.
-client/fast:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-.PHONY : client/fast
+httpserver/fast:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/build
+.PHONY : httpserver/fast
 
 #=============================================================================
 # Target rules for targets named epoll_client
@@ -150,6 +137,32 @@ epoll_client/fast:
 .PHONY : epoll_client/fast
 
 #=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named epoll_server
+
+# Build rule for target.
+epoll_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 epoll_server
+.PHONY : epoll_server
+
+# fast build rule for target.
+epoll_server/fast:
+	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
+.PHONY : epoll_server/fast
+
+#=============================================================================
 # Target rules for targets named server
 
 # Build rule for target.
@@ -161,6 +174,59 @@ server: cmake_check_build_system
 server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named httpdeal
+
+# Build rule for target.
+httpdeal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 httpdeal
+.PHONY : httpdeal
+
+# fast build rule for target.
+httpdeal/fast:
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/build
+.PHONY : httpdeal/fast
+
+#=============================================================================
+# Target rules for targets named StringSplit
+
+# Build rule for target.
+StringSplit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StringSplit
+.PHONY : StringSplit
+
+# fast build rule for target.
+StringSplit/fast:
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/build
+.PHONY : StringSplit/fast
+
+src/StringSplit.o: src/StringSplit.cpp.o
+
+.PHONY : src/StringSplit.o
+
+# target to build an object file
+src/StringSplit.cpp.o:
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/src/StringSplit.cpp.o
+.PHONY : src/StringSplit.cpp.o
+
+src/StringSplit.i: src/StringSplit.cpp.i
+
+.PHONY : src/StringSplit.i
+
+# target to preprocess a source file
+src/StringSplit.cpp.i:
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/src/StringSplit.cpp.i
+.PHONY : src/StringSplit.cpp.i
+
+src/StringSplit.s: src/StringSplit.cpp.s
+
+.PHONY : src/StringSplit.s
+
+# target to generate assembly for a file
+src/StringSplit.cpp.s:
+	$(MAKE) -f CMakeFiles/StringSplit.dir/build.make CMakeFiles/StringSplit.dir/src/StringSplit.cpp.s
+.PHONY : src/StringSplit.cpp.s
 
 src/client.o: src/client.cpp.o
 
@@ -243,6 +309,60 @@ src/epoll_server.cpp.s:
 	$(MAKE) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/src/epoll_server.cpp.s
 .PHONY : src/epoll_server.cpp.s
 
+src/httpdeal.o: src/httpdeal.cpp.o
+
+.PHONY : src/httpdeal.o
+
+# target to build an object file
+src/httpdeal.cpp.o:
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/src/httpdeal.cpp.o
+.PHONY : src/httpdeal.cpp.o
+
+src/httpdeal.i: src/httpdeal.cpp.i
+
+.PHONY : src/httpdeal.i
+
+# target to preprocess a source file
+src/httpdeal.cpp.i:
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/src/httpdeal.cpp.i
+.PHONY : src/httpdeal.cpp.i
+
+src/httpdeal.s: src/httpdeal.cpp.s
+
+.PHONY : src/httpdeal.s
+
+# target to generate assembly for a file
+src/httpdeal.cpp.s:
+	$(MAKE) -f CMakeFiles/httpdeal.dir/build.make CMakeFiles/httpdeal.dir/src/httpdeal.cpp.s
+.PHONY : src/httpdeal.cpp.s
+
+src/httpserver.o: src/httpserver.cpp.o
+
+.PHONY : src/httpserver.o
+
+# target to build an object file
+src/httpserver.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/httpserver.cpp.o
+.PHONY : src/httpserver.cpp.o
+
+src/httpserver.i: src/httpserver.cpp.i
+
+.PHONY : src/httpserver.i
+
+# target to preprocess a source file
+src/httpserver.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/httpserver.cpp.i
+.PHONY : src/httpserver.cpp.i
+
+src/httpserver.s: src/httpserver.cpp.s
+
+.PHONY : src/httpserver.s
+
+# target to generate assembly for a file
+src/httpserver.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/httpserver.cpp.s
+.PHONY : src/httpserver.cpp.s
+
 src/server.o: src/server.cpp.o
 
 .PHONY : src/server.o
@@ -276,12 +396,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... epoll_server"
+	@echo "... httpserver"
+	@echo "... epoll_client"
 	@echo "... client"
 	@echo "... rebuild_cache"
-	@echo "... epoll_client"
+	@echo "... epoll_server"
 	@echo "... server"
+	@echo "... httpdeal"
+	@echo "... edit_cache"
+	@echo "... StringSplit"
+	@echo "... src/StringSplit.o"
+	@echo "... src/StringSplit.i"
+	@echo "... src/StringSplit.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"
@@ -291,6 +417,12 @@ help:
 	@echo "... src/epoll_server.o"
 	@echo "... src/epoll_server.i"
 	@echo "... src/epoll_server.s"
+	@echo "... src/httpdeal.o"
+	@echo "... src/httpdeal.i"
+	@echo "... src/httpdeal.s"
+	@echo "... src/httpserver.o"
+	@echo "... src/httpserver.i"
+	@echo "... src/httpserver.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
