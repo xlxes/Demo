@@ -33,4 +33,14 @@ Content-Length:27
 按照上述格式转为string,然后使用send发送
 send(clientfd, senddata.c_str(), senddata.size(), 0)；
 
+*测试http的方式*
 
+方法一：
+在浏览器端直接输入IP和端口号既可以测试发送和接受http的能力
+方法二：
+使用curl -d "message=nice to meet you" 127.0.0.1:9734/hello-everyone可以在窗口中测试
+方法三：
+ab压力测试
+ab -k -n1000 -c1000 http://192.168.124.7:8080/
+注意：在尾部必须加上/ 在服务端处理完请求就应该立即关掉clientfd,要不然就会出现ab端测试超时的现象
+https://www.jianshu.com/p/33a8121e079c
