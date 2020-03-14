@@ -7,3 +7,5 @@ SET( CMAKE_BUILD_TYPE "Debug")
 add_executable(sort src/sort.cpp)
 
 add_executable(find src/find.cpp)
+
+add_executable(binary_search src/binarysearch.cpp)

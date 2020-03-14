@@ -6,15 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/x/Demo/DataStructure/src/sort.cpp
+/home/x/Demo/DataStructure/src/binarysearch.cpp
 iostream
 -
-string
--
 vector
--
-iterator
--
-algorithm
 -
 

@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++11 -O0 -g   CMakeFiles/find.dir/src/find.cpp.o  -o find -rdynamic 
+/usr/bin/c++  -std=c++11 -O0 -g  -rdynamic CMakeFiles/find.dir/src/find.cpp.o  -o find 
